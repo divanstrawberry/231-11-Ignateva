@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --second-bg-color: hsl(195, 78%, 91%);
+    --text-color: #000000;
+    --main-color: #caf1fd;
+}
+
+html{
+    font-size: 62.5% ;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+}
+
+.logo{
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color)
+}
+
+#menu-icon {
+    position: relative;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+.profile {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    font-size: 6.0rem;
+    font-weight: 700;
+    line-height: 0.8;
+    justify-content: center;
+}
+
+.profile-pic img {
+    margin: 50px 650px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.profile-info {
+    font-size: 25px;
+    font-weight: bold;
+}
+.profile-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.edit-button {
+    background-color: var(--second-bg-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.exit-button {
+    background-color: var(--second-bg-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3rem;
+}

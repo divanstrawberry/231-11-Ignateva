@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+:root{
+    --bg-color: #ffffff;
+    --second-bg-color: hsl(195, 78%, 91%);
+    --text-color: #000000;
+    --main-color: #caf1fd;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+}
+
+body{
+    background: url('../images/abilities.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: var(--text-color);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--text-color);
+}
+
+
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    color: var(--text-color);
+}
+
+.tabs {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-radius: 100px;
+    padding: 40px; 
+    font-size: 2.6rem;
+}
+
+.tabs > input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    margin-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: none; 
+    font-size: 1.5rem;
+    
+}
+
+#tab-1:checked ~ #content-1, #tab-2:checked ~ #content-2 {
+    display: block;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 75%; 
+}
+
+.tabs > input[type="radio"]:checked + label {
+    color: var(--text-color); 
+}
+
+#content-1 form, #content-2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.input-field {
+    color: var(--text-color);
+    padding: 10px;
+    width: 15rem;
+    outline: none;
+    border-radius: 10px;
+    
+}
+.checkbox-field {
+    margin-top: 0.3rem;
+}
+
+
+.btn-register, button[type="submit"] {
+    padding: 9px;
+    width: 15rem;
+    background: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    margin-top: 0.7rem;
+    color: var(--text-color);
+}
