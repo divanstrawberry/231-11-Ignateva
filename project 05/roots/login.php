@@ -17,10 +17,10 @@
        
         <div class="tab-content" id="content-1">
             <form action="reg/register.php" method="post">
-                <input type="text" placeholder="Введите email" name="email">
-                <input type="text" placeholder="Придумайте пароль" name="pass">
-                <input type="text" placeholder="Повторите пароль" name="repeatpass">
-                <label for="">Я принимаю <a href="reg/terms.pdf" target="_blank">условия использования</a></label><input type="checkbox">
+                <input type="email" placeholder="Введите email" id="email" name="login" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input type="password" placeholder="Придумайте пароль" id="password" name="pass" minlength="8" maxlength="20" required>
+                <input type="password" placeholder="Повторите пароль" name="repeatpass">
+                <label for="">Я принимаю <a href="reg/terms.pdf" target="_blank">условия использования</a></label><input type="checkbox" required>
                 <button type="sumbit">Зарегистрироваться</button>
                 <label for="">Уже зарегистрированы? <a href="enter.php" target="_blank">Войти</a></label>
             </form>

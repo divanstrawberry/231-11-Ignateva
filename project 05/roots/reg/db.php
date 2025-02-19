@@ -1,15 +1,14 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cwp1_231";
 
-$servername="localhost";
-$username="root";
-$password="";
-$dbname="cwp1_231";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-$conn=mysqli_connect($server, $username, $password, $dbname);
-
-if(!$conn){
-    die("Connection Failed". mysqli_connect_error());
+if (!$conn) {
+    die("Connection Failed: " . mysqli_connect_error());
 } else {
-     "Успех";
+    echo "Успех";
 }
 ?>

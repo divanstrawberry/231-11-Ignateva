@@ -11,6 +11,8 @@
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
+
 <body>
 
     <!-- header design -->
@@ -67,6 +69,30 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </section>
 
+<footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy;2024 by divanstrawberry | All rights reserved.</p>
+
+      <span class="animate scroll" style="--i:1;"></span>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+    </div>
+   </footer>
+
+</body>
+
+<!-- footer design -->
+
+
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper=new Swiper(".container",{
@@ -90,5 +116,4 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 
 
-</body>
 </html>

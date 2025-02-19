@@ -59,7 +59,7 @@ body {
 }
 
 .navbar a {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
@@ -221,3 +221,7 @@ section{
 .home-sci a:hover::before{
     width: 100%;
 }
+
+
+
+

@@ -26,7 +26,7 @@
            <a href="main.php">Главная</a>
             <a href="slider.php">Возможности</a>
             <!-- <a href="profile.html">Профиль</a> -->
-            <a href="reg/index.php">Вход/Регистрация</a>
+            <a href="login.php">Вход/Регистрация</a>
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
         </nav>

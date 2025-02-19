@@ -24,9 +24,9 @@
 
 
         <div class="tab-content" id="content-2">
-            <form action="forma/login.php" method="post">
-                <input type="text" placeholder="Логин/email" name="email">
-                <input type="text" placeholder="Пароль" name="pass">
+            <form action="reg/login.php" method="post">
+                <input type="email" placeholder="Введите email" id="email" name="login" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input type="password" placeholder="Введите пароль" id="password" name="pass" minlength="8" maxlength="20" required>
                 <label for=""><a href="http://t.me/divanstrawberry" target="_blank">Забыли пароль?</a></label>
                 <button type="sumbit">Войти</button>
                 <label for="">Ещё нет аккаунта? <a href="login.php" target="_blank">Зарегистрируйся сейчас!</a></label>
