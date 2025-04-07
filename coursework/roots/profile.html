@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="avatar" id="avatar"></div>
+    <h2>Профиль пользователя</h2>
+    
+    <p id="emailDisplay">Email: example@example.com</p>
+    
+    <button class="update" onclick="changeAvatar()">Изменить аватар</button>
+    <button class="logout" onclick="logout()">Выйти из аккаунта</button>
+</div>
+
+<input type="file" id="avatarInput" accept="image/*" style="display: none;" />
+
+<script>
+    // Сохраняем аватарку в localStorage
+    window.onload = function() {
+        const savedAvatar = localStorage.getItem('avatar');
+        if (savedAvatar) {
+            document.getElementById('avatar').style.backgroundImage = `url(${savedAvatar})`;
+        }
+    };
+
+    function changeAvatar() {
+        const avatarInput = document.getElementById('avatarInput');
+        avatarInput.click();
+        avatarInput.onchange = function() {
+            const file = avatarInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const avatarURL = e.target.result;
+                document.getElementById('avatar').style.backgroundImage = `url(${avatarURL})`;
+                localStorage.setItem('avatar', avatarURL); // Сохраняем в localStorage
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function logout() {
+        window.location.href = 'login.php'; // Перенаправление на login.php
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --second-bg-color: hsl(195, 78%, 91%);
+    --text-color: #000000;
+    --main-color: #caf1fd;
+    --ava-color: #ee9dee;
+}
+
+html{
+    font-size: 62.5% ;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+}
+
+.logo{
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color)
+}
+
+#menu-icon {
+    position: relative;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.abilities {
+    justify-content: center;
+    flex-direction: column;
+    min-height: auto;
+    font-size: 6.0rem;
+    font-weight: 700;
+    line-height: 0.8;
+    display: flex;
+    background: var(--bg-color--main-color);
+    margin-bottom: 90rem
+}
+
+
+.abilities h2 {
+    font-size: 6.0rem;
+    font-weight: 700;
+    line-height: 0.8;
+    display: flex;
+    justify-content: center;
+    background: var(--main-color);
+    border: 4rem solid var(--main-color);
+    border-radius: 5rem;
+    margin-bottom: 90rem
+}
+
+
+.abilities .abilities-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: -65vh;
+}
+
+.abilities-row .abilities-column {
+    flex: 1 1 40rem;
+}
+
+.abilities-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.abilities-column .abilities-box {
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+}
+
+.abilities-box .abilities-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.abilities-box .abilities-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.abilities-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.abilities-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.abilities-content .content:hover::before{
+    width: 100%;
+}
+
+.abilities-content .content h3 {
+    font-size: 3rem;
+}
+
+.abilities-content .content p {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
